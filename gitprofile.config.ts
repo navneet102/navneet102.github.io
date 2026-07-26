@@ -20,7 +20,7 @@ const CONFIG = {
           description:
             'Collaborative code editor for learning together, interviews, doubts.',
           imageUrl:
-            'https://media.licdn.com/dms/image/v2/D4D2DAQGSETamuBxsXg/profile-treasury-image-shrink_160_160/B4DZ.XsPyzHEAg-/0/1784956386772?e=1785679200&v=beta&t=cAjmHEDqLGrBM0jpAB3NOu56uJVeQty-0NhUALvLzu0',
+            'https://res.cloudinary.com/dpial6bi3/image/upload/v1785074478/codelab-client.onrender.com__1_ejo8gb.png',
           link: 'https://codelab-client.onrender.com/',
         },
         {
