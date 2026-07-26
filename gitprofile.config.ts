@@ -19,16 +19,16 @@ const CONFIG = {
           title: 'CodeLab',
           description:
             'Collaborative code editor for learning together, interviews, doubts.',
-          // imageUrl:
-          //   'https://res.cloudinary.com/dpial6bi3/image/upload/v1785074478/codelab-client.onrender.com__1_ejo8gb.png',
+           imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://codelab-client.onrender.com/',
         },
         {
           title: 'Privacy Lens',
           description:
             'Protect your privacy by choosing services based on their privacy policies.',
-          // imageUrl:
-          //   'https://media.licdn.com/dms/image/v2/D4D2DAQETI7mTt5AK2Q/profile-treasury-image-shrink_160_160/B4DZ.XtEClJ4Ak-/0/1784956600902?e=1785679200&v=beta&t=vhSwXuczwTKaCZjrIMcIT7avU_Btj4xmVm9tRuF8_DY',
+           imageUrl:
+             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://privacylens.tech/',
         },
       ],
