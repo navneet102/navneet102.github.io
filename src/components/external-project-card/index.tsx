@@ -20,11 +20,11 @@ const ExternalProjectCard = ({
     for (let index = 0; index < externalProjects.length; index++) {
       array.push(
         <div className="card shadow-md card-sm bg-base-100" key={index}>
-          <div className="p-8 h-full w-full">
+          <div className="p-6 h-full w-full">
             <div className="flex items-center flex-col">
               <div className="w-full">
-                <div className="flex items-start px-4">
-                  <div className="w-full">
+                <div className="px-2">
+                  <div className="w-full text-center">
                     <h2>
                       {skeleton({
                         widthCls: 'w-32',
@@ -32,14 +32,12 @@ const ExternalProjectCard = ({
                         className: 'mb-2 mx-auto',
                       })}
                     </h2>
-                    <div className="avatar w-full h-full">
-                      <div className="w-24 h-24 mask mask-squircle mx-auto">
-                        {skeleton({
-                          widthCls: 'w-full',
-                          heightCls: 'h-full',
-                          shape: '',
-                        })}
-                      </div>
+                    <div className="w-full aspect-video rounded-lg overflow-hidden my-3">
+                      {skeleton({
+                        widthCls: 'w-full',
+                        heightCls: 'h-full',
+                        shape: '',
+                      })}
                     </div>
                     <div className="mt-2">
                       {skeleton({
@@ -70,7 +68,7 @@ const ExternalProjectCard = ({
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
-        className="card shadow-md card-sm bg-base-100 cursor-pointer"
+        className="card shadow-md hover:shadow-xl transition-all duration-300 card-sm bg-base-100 cursor-pointer group"
         key={index}
         href={item.link}
         onClick={(e) => {
@@ -89,27 +87,26 @@ const ExternalProjectCard = ({
           window?.open(item.link, '_blank');
         }}
       >
-        <div className="p-8 h-full w-full">
+        <div className="p-6 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
-              <div className="px-4">
+              <div className="px-2">
                 <div className="text-center w-full">
-                  <h2 className="font-medium text-center opacity-60 mb-2">
+                  <h2 className="font-medium text-center opacity-60 mb-2 group-hover:opacity-100 transition-opacity">
                     {item.title}
                   </h2>
                   {item.imageUrl && (
-                    <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          placeholder={skeleton({
-                            widthCls: 'w-full',
-                            heightCls: 'h-full',
-                            shape: '',
-                          })}
-                        />
-                      </div>
+                    <div className="w-full aspect-video rounded-lg overflow-hidden border border-base-300/60 my-3 shadow-sm relative">
+                      <LazyImage
+                        src={item.imageUrl}
+                        alt={item.title}
+                        className="w-full h-full object-fill transition-transform duration-300 ease-out group-hover:scale-105"
+                        placeholder={skeleton({
+                          widthCls: 'w-full',
+                          heightCls: 'h-full',
+                          shape: '',
+                        })}
+                      />
                     </div>
                   )}
                   <p className="mt-2 text-base-content text-sm text-justify">

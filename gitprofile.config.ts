@@ -20,7 +20,7 @@ const CONFIG = {
           description:
             'Collaborative code editor for learning together, interviews, doubts.',
            imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'https://res.cloudinary.com/dpial6bi3/image/upload/v1785077668/Screenshot_2026-07-26_202407_cyhfic.png',
           link: 'https://codelab-client.onrender.com/',
         },
         {
@@ -28,7 +28,7 @@ const CONFIG = {
           description:
             'Protect your privacy by choosing services based on their privacy policies.',
            imageUrl:
-             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+             'https://res.cloudinary.com/dpial6bi3/image/upload/v1785078495/Screenshot_2026-07-26_203801_djptaw.png',
           link: 'https://privacylens.tech/',
         },
       ],
