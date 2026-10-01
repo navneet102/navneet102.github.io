@@ -29,7 +29,7 @@ const CONFIG = {
             'Protect your privacy by choosing services based on their privacy policies.',
            imageUrl:
              'https://res.cloudinary.com/dpial6bi3/image/upload/v1785078495/Screenshot_2026-07-26_203801_djptaw.png',
-          link: 'https://privacylens.tech/',
+          link: 'https://privacy-policy-analyser.onrender.com/',
         },
       ],
     },
